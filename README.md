@@ -10,9 +10,9 @@ Task: Create an upload system that allows employers to upload data into their co
 
 - So before serverless approach, you would be thinking of having 2 servers run for the upload scripts and one for balancing request to your app server. Maybe that was the reason you never like doing back-end jobs at all lol. But AWS is here for rescue.  
 
-AWS API GATEWAY 
-AWS LAMBDA (java, node.js, python environments)(but I will be using node.js)
-AWS DYNAMODB (<=25 items per batch)
+- AWS API GATEWAY 
+- AWS LAMBDA (java, node.js, python environments)(but I will be using node.js)
+- AWS DYNAMODB (<=25 items per batch)
  
 yes, these tools are managed tools, and we are only paying for what we are using
 
@@ -81,7 +81,14 @@ In the project, I provide you some code, so open the files then copy each code t
    - second lambda function should name `GetFromDB`
   
 - RunTime: should be Node.js 4.3
-  
+
+- For function handler and role, just follow the picture below:
+
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/tree/dev/screenshots/Lambda-config.png" width="350"/>
+</p>
+
+
 AWS provides and class implementation for `DynamoDB.DocumentClient()` writing for every language but I will use the for javascript/Node.js, we will use the 
 `scan` and `batchWrite` methods from that class.
 
