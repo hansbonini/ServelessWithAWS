@@ -85,7 +85,7 @@ In the project, I provide you some code, so open the files then copy each code t
 - For function handler and role, just follow the picture below:
 
 <p align="center">
-<img src="https://github.com/LamourBt/ServelessWithAWS/tree/dev/screenshots/Lambda-config.png" width="350"/>
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/Lambda-config.png" width="350"/>
 </p>
 
 
