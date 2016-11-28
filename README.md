@@ -151,7 +151,7 @@ let's look at API GateWay,  **Services > Application Services > API Gateway**
 
 after pressing the `save` Button, you will see lambda asking for permission (see the picture below), but allow it  
 <p align="center">
-<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/api-gateway-1asking-permission.png" width="350"/>
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/api-gateway-asking-permission.png" width="350"/>
 </p>
 
 Now we need to `Deploy` our api, so click on **Actions>Deploy API**, then our **deployment stage** should be `dev` because we are testing and we have yet to secure it.
