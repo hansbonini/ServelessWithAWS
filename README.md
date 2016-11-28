@@ -93,6 +93,35 @@ AWS provides and class implementation for `DynamoDB.DocumentClient()` writing fo
 `scan` and `batchWrite` methods from that class.
 
 
+Third Step:
+
+- Let's look for DynamoDB, **Services > DataBase > DynamoDB**
+- click on `create Table`
+- the table name should be `CompanyTranscation` 
+- the primary Key should be `Transcation` of a `String Type`
+
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/dynamo-config.png" width="350"/>
+</p>
 
 
+**Let's test to see if Lambda can talk to DynamoDB'** 
+ - let's try to save an array containing two objects such'
+
+  `[`
+    `{"Transcation":"MK0192", "Bank":"Citi", "Amount":1000},`
+    `{"Transcation":"MK0172", "Bank":"Discover", "Amount":4000}`
+ `]`
+
+so you will need to go back to Lambda
+- **Services > Compute > Lambda**
+- Then click on the `insertToDB` function 
+- Then click on `Action` then `Configure Test` where you paste that array of objects 
+- Then click `Save and Test`
+
+Under the Lambda Text Editor, you should see **Execution results: succeed**,
+
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/test.gif" width="350"/>
+</p>
 
