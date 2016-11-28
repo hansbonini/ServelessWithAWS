@@ -119,9 +119,18 @@ so you will need to go back to Lambda
 - Then click on `Action` then `Configure Test` where you paste that array of objects 
 - Then click `Save and Test`
 
-Under the Lambda Text Editor, you should see **Execution results: succeed**,
+Under the Lambda Text Editor, you should see **Execution results: succeed**, so go to DynamoDB and check out your table if you don't believe me :)'
 
 <p align="center">
 <img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/test.gif" width="350"/>
 </p>
+
+Fourth Step: 
+
+let's look at API GateWay,  **Services > Application Services > API Gateway**
+- click on `Create API`, select `New API` then give an `API NAME` such as tuto
+- now we have to add ressource or route to our api, so click on `Actions` Button next to Ressources (in the middle section)
+- click on `Create Ressource`, enable CORS , and provide a **Ressource name** called it `classified-transcations`, and the ressource path would be the same as the name (api gateway does that automatically).
+
+- in the middle section, select the `classi`
 
