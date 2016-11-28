@@ -130,7 +130,45 @@ Fourth Step:
 let's look at API GateWay,  **Services > Application Services > API Gateway**
 - click on `Create API`, select `New API` then give an `API NAME` such as tuto
 - now we have to add ressource or route to our api, so click on `Actions` Button next to Ressources (in the middle section)
-- click on `Create Ressource`, enable CORS , and provide a **Ressource name** called it `classified-transcations`, and the ressource path would be the same as the name (api gateway does that automatically).
 
-- in the middle section, select the `classi`
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/setup-ressources.png" width="350"/>
+</p>
+
+- click on `Create Ressource`, enable CORS , and provide a **Ressource name** called it `classified-transcations`, and the ressource path would be the same as the name (api gateway does that automatically).
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/adding-ressource.png" width="350"/>
+</p>
+- Now we have to add a method (HTTP VERB) in the middle section, so select the `classified-transcations`, Then click on `Actions` then `create Method` select `Get` then click on the checkbox near the HTTP verb.
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/adding-method.png" width="350"/>
+</p>
+
+- Now our ressource method needs to call our lambda function, see the picture below 
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/adding-lambda-to-method.png" width="350"/>
+</p>
+
+after pressing the `save` Button, you will see lambda asking for permission (see the picture below), but allow it  
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/api-gateway-1asking-permission.png" width="350"/>
+</p>
+
+Now we need to `Deploy` our api, so click on **Actions>Deploy API**, then our **deployment stage** should be `dev` because we are testing and we have yet to secure it.
+
+so click on `Deployement Stage` then select `[New Stage]`, then the `stage Name` should be `dev`. After pressing the `Deploy` button, you should get that screen below
+
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/deploy.png" width="350"/>
+</p>
+
+so the Invoke url that you see on the right side, it is the actuall api endpoint for both POST and Get HTTP Verbs for our ressource; So click on the link to see the data from your DB.
+<p align="center">
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/api-live.png" width="350"/>
+</p>
+
+
+That is it for now, explore these services on your own. If you have an questions create an `Issue`.
+Part Two of this tutorial is coming soon.
+
 
