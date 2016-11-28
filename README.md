@@ -132,7 +132,7 @@ let's look at API GateWay,  **Services > Application Services > API Gateway**
 - now we have to add ressource or route to our api, so click on `Actions` Button next to Ressources (in the middle section)
 
 <p align="center">
-<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/setup-ressources.png" width="350"/>
+<img src="https://github.com/LamourBt/ServelessWithAWS/blob/dev/screenshots/setup-ressouces.png" width="350"/>
 </p>
 
 - click on `Create Ressource`, enable CORS , and provide a **Ressource name** called it `classified-transcations`, and the ressource path would be the same as the name (api gateway does that automatically).

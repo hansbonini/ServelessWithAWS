@@ -17,9 +17,7 @@ exports.handler = function(event,context) {
      dynamoPromise.then(TranscationsData => {
        // context.succeed will send the data back to our
        // api route and then stop the lambda process. 
-  		context.succeed(container);
-  	 });
-  	 
+  		context.succeed(TranscationsData); 
   }).catch(TranscationErr => {
  	context.fail("Error While getting data from Transaction Table" + TranscationErr);
  });
